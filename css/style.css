@@ -583,11 +583,8 @@ img {
 .footer-form-icon {
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateY(-50%);
-
-  /* right: 50%;
-  transform: translate(-50%); */
+  right: 10%;
+  transform: translateY(50%);
 
   fill: #ffffff;
   background-color: var(--accent-color);
@@ -608,6 +605,11 @@ img {
 
   color: var(--main-title-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 .mail {
@@ -864,7 +866,6 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   resize: none;
 }
 .modal-coment:focus {
@@ -933,7 +934,6 @@ img {
   letter-spacing: 0.06em;
 }
 .form-link {
-  text-decoration: ;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
