@@ -733,9 +733,9 @@ img {
   position: absolute;
   top: 0;
   opacity: 1;
-  transition: 500ms;
+  transition-timing-function: var(--transition-timing-function);
   transform: translateY(100%);
-  transition: var(--transition-duration);
+  transition-duration: var(--transition-duration);
   overflow: auto;
 }
 
@@ -747,6 +747,8 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
 .modal {
   position: absolute;
@@ -760,10 +762,11 @@ img {
   border-radius: 4px;
 
   transform: translate(-50%, -50%);
-  transition: opacity var(--transition-duration)
+
+  /* transition: opacity var(--transition-duration)
     var(--transition-timing-function);
   transition: visibility var(--transition-duration)
-    var(--transition-timing-function);
+    var(--transition-timing-function); */
 }
 .modal-close {
   position: absolute;
@@ -791,6 +794,8 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
 }
 .modal-title {
   margin-bottom: 12px;
